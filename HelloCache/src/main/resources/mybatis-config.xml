@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<settings>
+		<setting name="cacheEnabled" value="false" />
+		<setting name="lazyLoadingEnabled" value="true" />
+		<setting name="multipleResultSetsEnabled" value="true" />
+		<setting name="useColumnLabel" value="true" />
+		<setting name="defaultStatementTimeout" value="25000" />
+	</settings>
+
+	<!-- 插件配置 -->
+	<!-- <plugins>
+		分表插件配置
+	    <plugin interceptor="com.google.code.shardbatis.plugin.ShardPlugin">  
+                <property name="shardingConfig" value="shard_config.xml"/>  
+        </plugin> 
+        <plugin interceptor="com.migu.aipay.common.tools.plugin.ResultSetInterceptor"></plugin>
+        <plugin interceptor="com.migu.aipay.common.tools.plugin.ExecutorInterceptor"></plugin>
+        <plugin interceptor="com.migu.aipay.common.tools.plugin.ParameterInterceptor"></plugin>
+	</plugins> -->
+</configuration>

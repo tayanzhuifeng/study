@@ -1,0 +1,11 @@
+.metadata
+.recommenders
+RemoteSystemsTempFiles
+Servers
+.project
+.classpath
+/target/
+/.settings/
+*.iml
+.idea/
+/html
