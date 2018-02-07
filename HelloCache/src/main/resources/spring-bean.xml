@@ -20,4 +20,9 @@
 	</context:component-scan>
 	
 	<!-- <bean id="springContextHelper" class="com.study.cache.common.ApplicationContextRegister"/> -->
+	
+	<bean id="generateIdRedisScript" class="org.springframework.data.redis.core.script.DefaultRedisScript">
+        <property name="location" value="classpath:lua/genID.lua"/>
+        <property name="resultType" value="java.lang.String"/>
+    </bean>
 </beans>
